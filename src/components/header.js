@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
-import {  } from "gatsby"
 import HeaderStyles from "../styles/components/header.module.css"
 import Img from "gatsby-image"
 
