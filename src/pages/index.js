@@ -10,7 +10,7 @@ export default function Home() {
     query {
       background: file(relativePath: { eq: "images/bg.jpg" }) {
         childImageSharp {
-          fluid(quality: 100){
+          fluid(quality: 100, maxWidth: 1920){
             ...GatsbyImageSharpFluid
           }
         }
