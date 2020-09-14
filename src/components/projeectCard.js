@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 
