@@ -1,3 +1,30 @@
 .h2 {
     color: darkgreen;
 }
+
+.resume {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.resume li {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.resume li h6 {
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    margin-bottom: 5px;
+}
+.resume li p {
+    color: #999;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    fill: #c49b66;
+}
