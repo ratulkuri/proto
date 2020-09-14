@@ -7,11 +7,8 @@ export default function About() {
     <Container>
         <div className="row">
             <div className="col">
+              <div className="d-flex flex-column j-c-center" style={{ minHeight: "calc(100vh - 106px)"}}>
                 <h2 className={AboutStyles.h2}>About Me</h2>
-            </div>
-        </div>
-        <div className="row">
-            <div className="col">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.Excepturi incidunt ab vitae qui ?
                   Sit commodi illo quisquam nemo ratione rem dicta, officiis sunt provident quae eos labore!
@@ -30,6 +27,7 @@ export default function About() {
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.Excepturi incidunt ab vitae qui ?
                   Sit commodi illo quisquam nemo ratione rem dicta, officiis sunt provident quae eos labore!
                 </p>
+              </div>
             </div>
         </div>
     </Container>
