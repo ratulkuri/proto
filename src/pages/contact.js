@@ -26,7 +26,7 @@ export default function Contact() {
                     <li className={ContactStyles.listItem}>
                       <FaPhone className="react-icons" />
                       <span className={ContactStyles.contactText +" "+ ContactStyles.phone}>
-                        <a href="tel:1-212-555-5555" title="Give me a call">(+880) 123-1234567</a>
+                        <a href="tel:+8801231234567" title="Give me a call">(+880) 123-1234567</a>
                       </span>
                     </li>
                     <li className={ContactStyles.listItem}>
