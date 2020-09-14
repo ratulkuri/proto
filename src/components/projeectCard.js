@@ -5,11 +5,9 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import CardStyles from "../styles/components/projectCard.module.css"
 
-// const richTextOptions = {
-//     renderNode: {
-//       [BLOCKS.PARAGRAPH]: (node, children) => <p>{children.substring(0,100)}</p>
-//     }
-// };
+const richTextOptions = {
+    renderText: text => text.substring(0,250),
+};
 
 export default function ProjectCard({title, slug, description}) {
   return (
@@ -21,7 +19,7 @@ export default function ProjectCard({title, slug, description}) {
                 </div>
                 <div className={ CardStyles.cardHover }>
                     <h2>{ title }</h2>
-                    {documentToReactComponents(description)}
+                    {documentToReactComponents(description, richTextOptions)}
                     <p className={ CardStyles.link }>Click to see project</p>
                 </div>
             </Link>
