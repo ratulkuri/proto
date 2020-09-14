@@ -21,6 +21,9 @@ export default function Portfolio() {
               sizes
             }
           }
+          description {
+            json
+          }
         }
       }
     }
@@ -34,7 +37,7 @@ export default function Portfolio() {
                 <div className={ PortfolioStyles.portfolioWrap + " d-flex"}>
                   {
                     projects.map((product)=>{
-                      return <ProjeectCard key={product.id} title={product.title} slug={product.slug} />
+                      return <ProjeectCard key={product.id} title={product.title} slug={product.slug} description={product.description.json} />
                     })
                   }
                 </div>
