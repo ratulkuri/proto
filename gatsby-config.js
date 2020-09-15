@@ -25,5 +25,13 @@ module.exports = {
         accessToken: `HMfa56Tj2_pqicvlMRiR0kKuWLVHjUJnuBiH_i3jrTY`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Ubuntu:400,500']
+        }
+      }
+    }
   ],
 }
