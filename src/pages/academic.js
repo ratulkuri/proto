@@ -1,5 +1,6 @@
 import React from "react"
 import Container from "../components/container"
+import Seo from "../components/seo"
 import AcademicStyles from "../styles/pages/academic.module.css"
 import { FaBuilding } from "react-icons/fa";
 
@@ -7,7 +8,8 @@ import { FaBuilding } from "react-icons/fa";
 export default function Academic() {
   return (
     <Container>
-        <div className="row">
+      <Seo title={'Academic'} />
+      <div className="row">
             <div className="col">
               <div className="d-flex j-c-center a-items-center" style={{ minHeight: "calc(100vh - 106px)"}}>
                 <ul className={ AcademicStyles.resume }>

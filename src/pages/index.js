@@ -1,5 +1,6 @@
 import React from "react"
 import Container from "../components/container"
+import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import indexStyles from "../styles/pages/index.module.css"
@@ -21,6 +22,7 @@ export default function Home() {
 
   return (
     <Container>
+      <Seo title={'Home'} />
       <BackgroundImage fluid={data.background.childImageSharp.fluid}>
         <div className="row">
           <div className="col text-center">

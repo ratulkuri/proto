@@ -1,5 +1,6 @@
 import React from "react"
 import Container from "../components/container"
+import Seo from "../components/seo"
 import ContactStyles from "../styles/pages/contact.module.css"
 import {
   FaPhone,
@@ -13,7 +14,8 @@ import {
 export default function Contact() {
   return (
     <Container>
-        <div className="row">
+      <Seo title={'Contact Me'} />
+      <div className="row">
           <div className="col">
             <section id={ContactStyles.contact}>
               <div className={ContactStyles.contactWrapper}>

@@ -1,10 +1,12 @@
 import React from "react"
 import Container from "../components/container"
+import Seo from "../components/seo"
 import AboutStyles from "../styles/pages/about.module.css"
 
 export default function About() {
   return (
     <Container>
+        <Seo title={'About Me'} />
         <div className="row">
             <div className="col">
               <div className="d-flex flex-column j-c-center" style={{ minHeight: "calc(100vh - 106px)"}}>

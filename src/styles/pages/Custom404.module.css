@@ -1,3 +1,36 @@
 .h2 {
     color: red;
 }
+
+.ErWrap {
+    min-height: calc(100vh - 106px);
+    background: #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+                    flex-direction: column;
+    -webkit-box-pack: center;
+                    justify-content: center;
+    -webkit-box-align: center;
+                    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+}
+.ErWrap .errorText {
+    font-size: 22px;
+    margin: 14px 0;
+}
+.ErWrap .errorLink {
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.ErWrap .errorLink:hover, .ErWrap .errorLink:active {
+    color: #fff;
+    background: #000;
+}

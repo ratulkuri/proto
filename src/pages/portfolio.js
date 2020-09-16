@@ -2,6 +2,7 @@ import React from "react"
 import Container from "../components/container"
 import { useStaticQuery, graphql } from "gatsby"
 import ProjeectCard from "../components/projeectCard"
+import Seo from "../components/seo"
 import PortfolioStyles from "../styles/pages/portfolio.module.css"
 
 export default function Portfolio() {
@@ -32,6 +33,7 @@ export default function Portfolio() {
 
   return (
     <Container>
+        <Seo title={'Portfolio'} />
         <div className="row">
             <div className="col">
                 <div className={ PortfolioStyles.portfolioWrap + " d-flex"}>
